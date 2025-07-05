@@ -1,0 +1,63 @@
+.attendance-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #f4f4f4;
+  padding: 30px;
+  border-radius: 10px;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.filter-select {
+  padding: 8px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.student-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.student-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.student-item.present {
+  border-left: 6px solid green;
+  background-color: #eafaf1;
+  color: #2e7d32;
+}
+
+.student-item.absent {
+  border-left: 6px solid red;
+  background-color: #fdecea;
+  color: #c62828;
+}
+
+.student-item button {
+  padding: 6px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.student-item button:hover {
+  transform: scale(1.05);
+}
+
+.summary {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}

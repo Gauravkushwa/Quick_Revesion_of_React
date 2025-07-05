@@ -1,0 +1,70 @@
+/* Center everything */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Counter container */
+  div {
+    text-align: center;
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading */
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  /* Buttons */
+  button {
+    padding: 12px 20px;
+    margin: 0 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+  }
+  
+  /* Button types */
+  button:nth-child(2) {
+    background-color: #28a745; /* Green - Increase */
+    color: white;
+  }
+  
+  button:nth-child(3) {
+    background-color: #dc3545; /* Red - Decrease */
+    color: white;
+  }
+  
+  button:nth-child(4) {
+    background-color: #007bff; /* Blue - Reset */
+    color: white;
+  }
+  
+  /* Hover effect */
+  button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  
+  /* Disabled styling (optional) */
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    transform: none;
+    opacity: 0.6;
+  }
+  

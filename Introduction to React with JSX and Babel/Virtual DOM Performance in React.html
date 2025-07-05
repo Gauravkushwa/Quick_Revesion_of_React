@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Virtual DOM Performance in React</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <button id="dombtn">change the Title with the help of DOM</button>
+    <div id="root">
+        
+       
+    </div>
+</body>
+<script type="text/babel">
+    let dombtn = document.getElementById('dombtn')
+    dombtn.addEventListener('click', () =>{
+        document.title = "DOM Applied"
+    })
+    var root = document.getElementById("root");
+
+    const App = () =>{
+        const rctbtn = () =>{
+            document.title = "React Applied"
+        }
+        return (
+            <>
+            <button onClick={rctbtn}>change the Title with the help of React </button>
+            </>
+        )
+    }
+    ReactDOM.createRoot(root).render(<App />)
+</script>
+</html>
